@@ -14,7 +14,7 @@ class HeaderComponent extends Component {
                         <h3 className="">It will always stay visible on the top, even when you scroll down</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, aut consectetur culpa explicabo impedit.</p><br />
                         <MDBBtn color="deep-orange">View all products</MDBBtn>
-                        <BookingApp/>
+                        <BookingApp />
                     </MDBContainer>
                 </MDBMask>
             </MDBView>
