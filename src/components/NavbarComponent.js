@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBCollapse, MDBContainer, MDBNavItem, MDBNavLink,
     MDBDropdown, MDBDropdownToggle, MDBDropdownMenu,MDBDropdownItem, MDBHamburgerToggler } from "mdbreact";
-import { BrowserRouter as Router } from 'react-router-dom';
+
+
+
 import '../index.css';
 
 
@@ -26,7 +28,6 @@ class NavbarComponent extends Component {
     render() {
         return (
             <header>
-                <Router>
                     <MDBNavbar color="white" light expand="md" className="pt-3 pb-3">
                         <MDBContainer>
                             <MDBNavbarBrand>
@@ -37,11 +38,11 @@ class NavbarComponent extends Component {
                                 <MDBNavbarNav right className="font-weight-normal text-uppercase text-center">
 
                                     <MDBNavItem>
-                                        <MDBNavLink className="deep-orange-text" to="#!">Home</MDBNavLink>
+                                        <MDBNavLink className="deep-orange-text" to="/">Home</MDBNavLink>
                                     </MDBNavItem>
 
                                     <MDBNavItem>
-                                        <MDBNavLink className="deep-orange-text" to="#!">About</MDBNavLink>
+                                        <MDBNavLink className="deep-orange-text" to="/about">About</MDBNavLink>
                                     </MDBNavItem>
 
                                     <MDBNavItem>
@@ -50,9 +51,9 @@ class NavbarComponent extends Component {
                                                 <span className="mr-2 deep-orange-text">Services</span>
                                             </MDBDropdownToggle>
                                             <MDBDropdownMenu>
-                                                <MDBDropdownItem className="deep-orange-text" href="#!">Service 1</MDBDropdownItem>
-                                                <MDBDropdownItem className="deep-orange-text" href="#!">Service 2</MDBDropdownItem>
-                                                <MDBDropdownItem className="deep-orange-text" href="#!">Service 3</MDBDropdownItem>
+                                                <MDBDropdownItem className="deep-orange-text" href="/services/service-1">Service 1</MDBDropdownItem>
+                                                <MDBDropdownItem className="deep-orange-text" href="/services/service-2">Service 2</MDBDropdownItem>
+                                                <MDBDropdownItem className="deep-orange-text" href="/services/service-3">Service 3</MDBDropdownItem>
                                             </MDBDropdownMenu>
                                         </MDBDropdown>
                                     </MDBNavItem>
@@ -63,25 +64,25 @@ class NavbarComponent extends Component {
                                                 <span className="mr-2 deep-orange-text">Products</span>
                                             </MDBDropdownToggle>
                                             <MDBDropdownMenu>
-                                                <MDBDropdownItem className="deep-orange-text" href="#!">Product 1</MDBDropdownItem>
-                                                <MDBDropdownItem className="deep-orange-text" href="#!">Product 2</MDBDropdownItem>
+                                                <MDBDropdownItem className="deep-orange-text" href="/products/product-1">Product 1</MDBDropdownItem>
+                                                <MDBDropdownItem className="deep-orange-text" href="/products/product-2">Product 2</MDBDropdownItem>
                                             </MDBDropdownMenu>
                                         </MDBDropdown>
                                     </MDBNavItem>
 
                                     <MDBNavItem>
-                                        <MDBNavLink className="deep-orange-text" to="#!">Contact</MDBNavLink>
+                                        <MDBNavLink className="deep-orange-text" to="/contact">Contact</MDBNavLink>
                                     </MDBNavItem>
-
                                 </MDBNavbarNav>
                             </MDBCollapse>
                         </MDBContainer>
                     </MDBNavbar>
-                </Router>
-
             </header>
         );
     }
 }
+
+
+
 
 export default NavbarComponent;
